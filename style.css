@@ -1,0 +1,103 @@
+body {
+  background: url(./img/bg-stars.jpg) no-repeat center center fixed;
+  color: white;
+  max-height: 100%;
+}
+
+main {
+  position: relative;
+  display: flex;
+  min-height: 90vh;
+  left: 0;
+  width: 100%;
+  align-items: center;
+}
+
+#ship {
+  position: absolute;
+  left: 3rem;
+  height: 8rem;
+  width: 8rem;
+  background: url(./img/skepp.png) no-repeat center center;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+.asteroid {
+  position: absolute;
+  right: 0;
+  height: 4rem;
+  width: 4rem;
+  animation: spin 3.3s linear both infinite;
+  border-radius: 999rem;
+  background: url(./img/asteroid.png) no-repeat center center;
+  background-size: cover;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-1turn);
+  }
+}
+
+.sv {
+  position: fixed;
+  top: 4rem;
+  left: 4rem;
+  height: 8rem;
+  background: url(./img/sv.png) no-repeat center center;
+  background-size: cover;
+}
+
+#btn {
+  background-color: blue;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  position: fixed;
+  border-radius: 1.25rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  box-shadow: 0 0 0.3em 0.1em blue;
+}
+
+#end-btn {
+  background-color: blue;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  position: fixed;
+  border-radius: 1.25rem;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  box-shadow: 0 0 0.3em 0.1em blue;
+  z-index: 9;
+}
+
+#timer {
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  font-size: 4rem;
+}
+
+#high-score {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  font-size: 4rem;
+}
+
+#bezos {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
