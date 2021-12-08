@@ -1,3 +1,3 @@
 # Spelprogrammering
 
-Tryck space för att ducka asteroider
+Tryck space för att ducka asteroider!
